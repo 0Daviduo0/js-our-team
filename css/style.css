@@ -14,11 +14,15 @@
 .subtitle{
     margin-top: 20px;
     text-align: center;
+    margin: 0 20px;
 }
 
+.wrapper{
+    margin: 30px 300px;
+}
 
 .cards_container{
-    margin: 30px 400px;
+    /* margin: 30px 400px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -49,3 +53,40 @@
         border-radius: 15px;
         overflow: hidden;
     }
+
+
+@media screen and (max-width: 1270px){
+    .wrapper{
+        margin: 30px 200px;
+    }
+}
+    
+@media screen and (max-width: 1070px){
+    .wrapper{
+        margin: 30px 100px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .wrapper{
+        margin: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .wrapper{
+        margin: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wrapper{
+        margin: 30px 50px;
+    }
+
+    .cards_container{
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 30px;
+    }
+}
